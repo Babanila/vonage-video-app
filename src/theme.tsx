@@ -1,5 +1,5 @@
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 export const darkTheme = createTheme({
   palette: {
@@ -35,10 +35,10 @@ export const lightTheme = createTheme({
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#24466c",
+      main: '#24466c',
     },
     secondary: {
-      main: "#f4616b",
+      main: '#f4616b',
     },
     error: {
       main: red.A400,

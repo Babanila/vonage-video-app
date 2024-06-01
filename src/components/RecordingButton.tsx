@@ -69,16 +69,16 @@ export const RecordingButton: React.FC<RecordingButtonProps> = ({
   const title = isRecording ? 'Stop Recording' : 'Start Recording';
 
   return (
-    <Tooltip title={title} aria-label='add'>
+    <Tooltip title={title} aria-label="add">
       <IconButton
-        edge='start'
-        color='inherit'
-        aria-label='mic'
+        edge="start"
+        color="inherit"
+        aria-label="mic"
         onClick={() => handleRecordingAction}
         className={classes.toolbarButtons}
       >
         <FiberManualRecordIcon
-          fontSize='inherit'
+          fontSize="inherit"
           className={isRecording ? localClasses.activeRecordingIcon : undefined}
         />
       </IconButton>

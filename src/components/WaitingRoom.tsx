@@ -301,36 +301,36 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
       <div className={classes.waitingRoomContainer}>
         <Grid
           container
-          direction='column'
-          justifyContent='center'
-          alignItems='center'
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
         >
           <form className={classes.form} noValidate>
             <TextField
-              variant='outlined'
-              margin='normal'
+              variant="outlined"
+              margin="normal"
               fullWidth
-              id='publisher-name'
-              label='Name'
-              name='name'
+              id="publisher-name"
+              label="Name"
+              name="name"
               error={isUserNameInvalid}
               required
-              autoComplete='Name'
+              autoComplete="Name"
               helperText={userName === '' ? 'Empty Field' : ' '}
               value={userName}
               onChange={onChangeParticipantName}
               onKeyDown={onKeyDown}
             />
             <TextField
-              variant='outlined'
-              margin='normal'
+              variant="outlined"
+              margin="normal"
               required
               fullWidth
               // disabled={roomName !== ''}
-              id='room-name'
-              label='Room Name'
-              name='roomName'
-              autoComplete='Room Name'
+              id="room-name"
+              label="Room Name"
+              name="roomName"
+              autoComplete="Room Name"
               error={isRoomNameInvalid}
               autoFocus
               helperText={roomName === '' ? 'Empty Field' : ' '}
@@ -342,12 +342,12 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
               {deviceInfo && previewMediaCreated && (
                 <>
                   <FormControl>
-                    <InputLabel id='demo-simple-select-label'>
+                    <InputLabel id="demo-simple-select-label">
                       Select Audio Source
                     </InputLabel>
                     <Select
-                      labelId='demo-simple-select-label'
-                      id='demo-simple-select'
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
                       value={audioDevice}
                       onChange={(e: SelectChangeEvent) => handleAudioSource(e)}
                     >
@@ -365,11 +365,11 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
                   </FormControl>
 
                   <FormControl>
-                    <InputLabel id='video'>Select Audio Output</InputLabel>
+                    <InputLabel id="video">Select Audio Output</InputLabel>
                     {deviceInfo.audioOutputDevices && (
                       <Select
-                        labelId='video'
-                        id='demo-simple-select'
+                        labelId="video"
+                        id="demo-simple-select"
                         value={audioOutputDevice}
                         onChange={(e: SelectChangeEvent) =>
                           handleAudioOutput(e)
@@ -393,11 +393,11 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
 
               {deviceInfo && previewMediaCreated && (
                 <FormControl>
-                  <InputLabel id='video'>Select Video Source</InputLabel>
+                  <InputLabel id="video">Select Video Source</InputLabel>
                   {deviceInfo.videoInputDevices && (
                     <Select
-                      labelId='video'
-                      id='demo-simple-select'
+                      labelId="video"
+                      id="demo-simple-select"
                       value={videoDevice}
                       onChange={(e: SelectChangeEvent) => handleVideoSource(e)}
                     >
@@ -419,7 +419,7 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
           </form>
 
           <div
-            id='waiting-room-video-container'
+            id="waiting-room-video-container"
             className={classes.waitingRoomVideoPreview}
             ref={waitingRoomVideoContainer}
           ></div>
@@ -430,7 +430,7 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
               hasAudio={localAudio}
               onAudioChange={handleAudioChange}
             />
-            <LinearProgress variant='determinate' value={logLevel} />
+            <LinearProgress variant="determinate" value={logLevel} />
             <VideoSettings
               className={classes.deviceSettings}
               hasVideo={localVideo}
@@ -445,13 +445,13 @@ export const WaitingRoom: React.FC<WaitingRoomProps> = () => {
 
         <Grid
           container
-          direction='column'
-          justifyContent='center'
-          alignItems='center'
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
         >
           <Button
-            variant='contained'
-            color='primary'
+            variant="contained"
+            color="primary"
             onClick={handleJoinClick}
             disabled={!roomName || !userName}
           >

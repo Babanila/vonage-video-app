@@ -97,27 +97,27 @@ export const MuteVideoButton: React.FC<MuteVideoButtonProps> = ({
       <ButtonGroup
         className={classes.groupButton}
         disableElevation
-        variant='contained'
+        variant="contained"
         ref={anchorRef}
-        aria-label='split button'
+        aria-label="split button"
       >
-        <Tooltip title={title} aria-label='add'>
+        <Tooltip title={title} aria-label="add">
           <IconButton
             onClick={toggleVideo}
-            edge='start'
-            aria-label='videoCamera'
-            size='small'
+            edge="start"
+            aria-label="videoCamera"
+            size="small"
             className={`${classes.arrowButton as string} ${isVideoPresent}`}
           >
             {!hasVideo ? <VideocamOffIcon /> : <VideocamIcon />}
           </IconButton>
         </Tooltip>
         <IconButton
-          size='small'
+          size="small"
           aria-controls={open ? 'split-button-menu' : undefined}
           aria-expanded={open ? 'true' : undefined}
-          aria-label='select merge strategy'
-          aria-haspopup='menu'
+          aria-label="select merge strategy"
+          aria-haspopup="menu"
           onClick={handleToggle}
           className={classes.arrowButton}
         >
@@ -143,7 +143,7 @@ export const MuteVideoButton: React.FC<MuteVideoButtonProps> = ({
           >
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MenuList id='split-button-menu'>
+                <MenuList id="split-button-menu">
                   {options.map((option, index) => (
                     <MenuItem
                       key={option}

@@ -31,7 +31,7 @@ const TabPanel: React.FC<{
 }> = ({ children, value, index }) => {
   return (
     <div
-      role='tabpanel'
+      role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -66,15 +66,15 @@ export const SideMenu: React.FC<SideMenuProps> = ({
 
   return (
     <div>
-      <AppBar position='static'>
+      <AppBar position="static">
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label='simple tabs example'
+          aria-label="simple tabs example"
         >
-          <Tab label='Chat' {...a11yProps(0)} />
-          <Tab label='List of Participants' {...a11yProps(1)} />
-          <Tab label='Meeting info' {...a11yProps(2)} />
+          <Tab label="Chat" {...a11yProps(0)} />
+          <Tab label="List of Participants" {...a11yProps(1)} />
+          <Tab label="Meeting info" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -89,7 +89,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             <>
               <ListItem key={'participants_counter'}>
                 <ListItemIcon>
-                  <GroupIcon variant='contained' color='primary' />
+                  <GroupIcon variant="contained" color="primary" />
                 </ListItemIcon>
                 Participants ({participants.length + 1})
               </ListItem>
@@ -99,7 +99,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             <>
               <ListItem key={localParticipant.id}>
                 <ListItemIcon>
-                  <PersonIcon variant='contained' color='primary' />
+                  <PersonIcon variant="contained" color="primary" />
                 </ListItemIcon>
                 <ListItemText primary={localParticipant.name} />
               </ListItem>
@@ -113,7 +113,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                 <React.Fragment key={e.id}>
                   <ListItem key={e.id}>
                     <ListItemIcon>
-                      <PersonIcon variant='contained' color='primary' />
+                      <PersonIcon variant="contained" color="primary" />
                     </ListItemIcon>
                     <ListItemText primary={e.name} />
                   </ListItem>

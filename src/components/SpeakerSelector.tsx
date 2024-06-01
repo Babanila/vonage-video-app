@@ -87,11 +87,11 @@ export const SpeakerSelector: React.FC<SpeakerSelectorProps> = ({
 
   return (
     <div>
-      <Tooltip title='Change Audio Output'>
+      <Tooltip title="Change Audio Output">
         <IconButton
-          aria-label='more'
-          aria-controls='long-menu'
-          aria-haspopup='true'
+          aria-label="more"
+          aria-controls="long-menu"
+          aria-haspopup="true"
           className={classes.toolbarButtons}
           onClick={handleClick}
         >
@@ -99,7 +99,7 @@ export const SpeakerSelector: React.FC<SpeakerSelectorProps> = ({
         </IconButton>
       </Tooltip>
       <Menu
-        id='long-menu'
+        id="long-menu"
         anchorEl={anchorEl}
         keepMounted
         open={open}

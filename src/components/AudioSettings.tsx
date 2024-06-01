@@ -21,7 +21,7 @@ export const AudioSettings: FC<AudioSettingsProps> = ({
     <div className={className}>
       <MicIcon />
       <div>Microphone</div>
-      <Switch checked={hasAudio} onChange={onAudioChange} name='AudioToggle' />
+      <Switch checked={hasAudio} onChange={onAudioChange} name="AudioToggle" />
     </div>
   );
 };

@@ -40,11 +40,11 @@ export const ListAudioSources: React.FC<ListLayOutOptionsProps> = ({
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <FormControl component='fieldset'>
-        <FormLabel component='legend'>Layout</FormLabel>
-        <RadioGroup aria-label='layout' name='layout' defaultValue='Mic 1'>
-          <FormControlLabel value='Mic 1' control={<Radio />} label='Mic 1' />
-          <FormControlLabel value='Mic 2' control={<Radio />} label='Mic 2' />
+      <FormControl component="fieldset">
+        <FormLabel component="legend">Layout</FormLabel>
+        <RadioGroup aria-label="layout" name="layout" defaultValue="Mic 1">
+          <FormControlLabel value="Mic 1" control={<Radio />} label="Mic 1" />
+          <FormControlLabel value="Mic 2" control={<Radio />} label="Mic 2" />
         </RadioGroup>
       </FormControl>
     </div>
@@ -55,8 +55,8 @@ export const ListAudioSources: React.FC<ListLayOutOptionsProps> = ({
       <Modal
         open={openModal}
         onClose={handleCloseModal}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
       >
         {body}
       </Modal>

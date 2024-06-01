@@ -14,16 +14,16 @@ export const EndCallButton: React.FC<EndCallIconProps> = ({
   handleEndCall,
 }) => {
   return (
-    <Tooltip title='End call' aria-label='add'>
+    <Tooltip title="End call" aria-label="add">
       <IconButton
-        edge='start'
-        color='inherit'
-        aria-label='videoCamera'
+        edge="start"
+        color="inherit"
+        aria-label="videoCamera"
         className={classes.toolbarButtons}
         style={{ backgroundColor: '#D50F2C' }}
         onClick={handleEndCall}
       >
-        <ExitToAppIcon fontSize='inherit' />
+        <ExitToAppIcon fontSize="inherit" />
       </IconButton>
     </Tooltip>
   );

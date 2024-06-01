@@ -18,18 +18,18 @@ export const MuteAllButton: React.FC<MuteAllButtonProps> = ({
 }) => {
   const title = areAllMuted ? 'Unmute Participants' : 'Mute Participants';
   return (
-    <Tooltip title={title} aria-label='add'>
+    <Tooltip title={title} aria-label="add">
       <IconButton
-        edge='start'
-        color='inherit'
-        aria-label='videoCamera'
+        edge="start"
+        color="inherit"
+        aria-label="videoCamera"
         onClick={handleMuteAll}
         className={classes.toolbarButtons}
       >
         {areAllMuted ? (
-          <RecordVoiceOverIcon fontSize='inherit' />
+          <RecordVoiceOverIcon fontSize="inherit" />
         ) : (
-          <VoiceOverOffIcon fontSize='inherit' />
+          <VoiceOverOffIcon fontSize="inherit" />
         )}
       </IconButton>
     </Tooltip>

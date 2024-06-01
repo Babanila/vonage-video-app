@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import { Button as ButtonMUI } from "../components/Button";
+import { Button as ButtonMUI } from '../components/Button';
 
 const meta = {
-  title: "Components/ButtonMUI",
+  title: 'Components/ButtonMUI',
   component: ButtonMUI,
   args: {
     // onClick: fn(),

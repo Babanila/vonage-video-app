@@ -26,21 +26,21 @@ export const ScreenSharingButton: React.FC<ScreenSharingButtonProps> = ({
   const title = isScreenSharing ? 'Stop Screensharing' : 'Start Screensharing';
 
   return (
-    <Tooltip title={title} aria-label='add'>
+    <Tooltip title={title} aria-label="add">
       <IconButton
         // variant='primary'
-        edge='start'
-        color='inherit'
-        aria-label='screen sharing'
+        edge="start"
+        color="inherit"
+        aria-label="screen sharing"
         onClick={handleScreenSharing}
         className={`${classes.toolbarButtons} ${
           isScreenSharing ? classes.activeButton : ''
         }`}
       >
         {isScreenSharing ? (
-          <StopScreenShareIcon fontSize='inherit' />
+          <StopScreenShareIcon fontSize="inherit" />
         ) : (
-          <ScreenShareIcon fontSize='inherit' />
+          <ScreenShareIcon fontSize="inherit" />
         )}
       </IconButton>
     </Tooltip>

@@ -47,11 +47,11 @@ export const LayoutButton: React.FC<LayoutButtonProps> = ({
 
   return (
     <div>
-      <Tooltip title='Change Layout'>
+      <Tooltip title="Change Layout">
         <IconButton
-          aria-label='more'
-          aria-controls='long-menu'
-          aria-haspopup='true'
+          aria-label="more"
+          aria-controls="long-menu"
+          aria-haspopup="true"
           className={classes.toolbarButtons}
           onClick={handleClick}
         >
@@ -59,7 +59,7 @@ export const LayoutButton: React.FC<LayoutButtonProps> = ({
         </IconButton>
       </Tooltip>
       <Menu
-        id='long-menu'
+        id="long-menu"
         anchorEl={anchorEl}
         keepMounted
         open={open}
@@ -75,7 +75,7 @@ export const LayoutButton: React.FC<LayoutButtonProps> = ({
           className={layOut === 'grid' ? localClasses.choosen : undefined}
           onClick={handleLayOutChange}
         >
-          <Typography variant='inherit'>Grid</Typography>
+          <Typography variant="inherit">Grid</Typography>
         </MenuItem>
         <MenuItem
           className={
@@ -83,7 +83,7 @@ export const LayoutButton: React.FC<LayoutButtonProps> = ({
           }
           onClick={handleLayOutChange}
         >
-          <Typography variant='inherit'>Active Speaker</Typography>
+          <Typography variant="inherit">Active Speaker</Typography>
         </MenuItem>
       </Menu>
     </div>

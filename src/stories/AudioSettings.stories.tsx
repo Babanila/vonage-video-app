@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within, expect, fn } from '@storybook/test';
 
-import { AudioSettings } from "../components/AudioSettings"
+import { AudioSettings } from '../components/AudioSettings';
 
 const meta: Meta = {
   title: 'Components/AudioSettings',
@@ -24,11 +24,9 @@ export const Default: Story = {
   },
 };
 
-
 export const AudioSettingsPlay: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     await userEvent.click(canvas.getByRole('checkbox'));
-
   },
 };

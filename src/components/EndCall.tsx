@@ -59,7 +59,7 @@ export const EndCall: React.FC = () => {
         </IconButton>
       </div>
       <div className={classes.banner}>
-        <Card className={classes.centeredFlex} variant='outlined'>
+        <Card className={classes.centeredFlex} variant="outlined">
           <CardContent>
             {recordings?.length ? (
               <h3>Recordings</h3>
@@ -77,9 +77,9 @@ export const EndCall: React.FC = () => {
                         Started at: {new Date(recording.createdAt).toString()}
                         {recording.status === 'available' ? (
                           <Button
-                            color='inherit'
-                            edge='start'
-                            target='_blank'
+                            color="inherit"
+                            edge="start"
+                            target="_blank"
                             href={recording.url}
                           >
                             <GetAppIcon />

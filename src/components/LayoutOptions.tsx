@@ -50,7 +50,7 @@ export const LayoutOptions: React.FC<LayoutOptionsProps> = ({
   return (
     <div>
       <StyledMenu
-        id='simple-menu'
+        id="simple-menu"
         anchorEl={anchorElLayout}
         keepMounted
         open={open}

@@ -1,5 +1,4 @@
-
-import * as React from "react";
+import * as React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,14 +36,14 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/room/:roomName/:sessionId/end'>
+        <Route path="/room/:roomName/:sessionId/end">
           <EndCall />
         </Route>
-        <UserNameRoute exact path='/room/:roomName' component={VideoRoom} />
+        <UserNameRoute exact path="/room/:roomName" component={VideoRoom} />
         {/* <Route exact path='/room/:roomName' component={VideoRoom}></Route> */}
-        <Route path='/error' component={Error}></Route>
-        <Route exact path='/' component={WaitingRoom}></Route>
-        <Route path='*'>
+        <Route path="/error" component={Error}></Route>
+        <Route exact path="/" component={WaitingRoom}></Route>
+        <Route path="*">
           <Redirect
             to={{
               pathname: '/',

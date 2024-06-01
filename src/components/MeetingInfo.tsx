@@ -30,7 +30,7 @@ export const MeetingInfo: React.FC<MeetingInfoProps> = ({ roomId }) => {
   const ListItemLink: React.FC<React.ComponentProps<typeof ListItem>> = (
     props,
   ) => {
-    return <ListItem component='a' {...props} button={true} />;
+    return <ListItem component="a" {...props} button={true} />;
   };
 
   const handleClick = () => {
@@ -49,15 +49,15 @@ export const MeetingInfo: React.FC<MeetingInfoProps> = ({ roomId }) => {
   return (
     <List className={localClasses.list}>
       <div className={localClasses.containerMI}>
-        <Typography className={localClasses.header} variant='h5'>
+        <Typography className={localClasses.header} variant="h5">
           Joining info
         </Typography>
         <ListItem>{window.location.href}</ListItem>
-        <Tooltip title={title} onClose={handleClose} aria-label='add'>
+        <Tooltip title={title} onClose={handleClose} aria-label="add">
           <Button
             onClick={handleClick}
-            variant='contained'
-            color='primary'
+            variant="contained"
+            color="primary"
             className={localClasses.buttonMI}
             endIcon={<FileCopyIcon>send</FileCopyIcon>}
           >
@@ -72,12 +72,12 @@ export const MeetingInfo: React.FC<MeetingInfoProps> = ({ roomId }) => {
         </ListItem>
 
         <Divider />
-        <Typography className={localClasses.header} variant='h5'>
+        <Typography className={localClasses.header} variant="h5">
           App info
         </Typography>
         <ListItem>
           <ListItemIcon>
-            <MoreIcon variant='contained' color='primary' />
+            <MoreIcon variant="contained" color="primary" />
           </ListItemIcon>
           <ListItemText
             className={localClasses.versionLabel}
@@ -86,31 +86,31 @@ export const MeetingInfo: React.FC<MeetingInfoProps> = ({ roomId }) => {
         </ListItem>
         <ListItem className={localClasses.listItem}>
           <ListItemIcon>
-            <HouseIcon variant='contained' color='primary' />
+            <HouseIcon variant="contained" color="primary" />
           </ListItemIcon>
           <ListItemLink
-            href='https://github.com/nexmo-se/video-api-multiparty-sdk-sample-app'
-            target='_blank'
+            href="https://github.com/nexmo-se/video-api-multiparty-sdk-sample-app"
+            target="_blank"
           >
-            <ListItemText primary='Source code' />
+            <ListItemText primary="Source code" />
           </ListItemLink>
         </ListItem>
         <ListItem className={localClasses.listItem}>
           <ListItemIcon>
             <ChildFriendlyIcon
               // variant='contained'
-              color='primary'
+              color="primary"
             />
           </ListItemIcon>
           <ListItemLink
-            href='https://www.npmjs.com/package/@vonage/video-express'
-            target='_blank'
+            href="https://www.npmjs.com/package/@vonage/video-express"
+            target="_blank"
           >
-            <ListItemText primary='Video Express' />
+            <ListItemText primary="Video Express" />
           </ListItemLink>
         </ListItem>
         <Divider />
-        <Typography className={localClasses.header} variant='h5'>
+        <Typography className={localClasses.header} variant="h5">
           Session info
         </Typography>
 

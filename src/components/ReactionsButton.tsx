@@ -35,11 +35,11 @@ export const ReactionsButton: React.FC<ReactionsButtonProps> = ({ room }) => {
 
   return (
     <div>
-      <Tooltip title='Add reaction'>
+      <Tooltip title="Add reaction">
         <IconButton
-          aria-label='more'
-          aria-controls='long-menu'
-          aria-haspopup='true'
+          aria-label="more"
+          aria-controls="long-menu"
+          aria-haspopup="true"
           className={classes.toolbarButtons}
           onClick={handleClick}
         >
@@ -47,7 +47,7 @@ export const ReactionsButton: React.FC<ReactionsButtonProps> = ({ room }) => {
         </IconButton>
       </Tooltip>
       <Menu
-        id='long-menu'
+        id="long-menu"
         anchorEl={anchorEl}
         keepMounted
         open={open}
@@ -65,7 +65,7 @@ export const ReactionsButton: React.FC<ReactionsButtonProps> = ({ room }) => {
             handleClose();
           }}
         >
-          <Typography variant='inherit'>
+          <Typography variant="inherit">
             <ThumbUpAltIcon />
           </Typography>
         </MenuItem>
@@ -75,7 +75,7 @@ export const ReactionsButton: React.FC<ReactionsButtonProps> = ({ room }) => {
             handleClose();
           }}
         >
-          <Typography variant='inherit'>
+          <Typography variant="inherit">
             <ThumbDownAltIcon />
           </Typography>
         </MenuItem>
@@ -85,7 +85,7 @@ export const ReactionsButton: React.FC<ReactionsButtonProps> = ({ room }) => {
             handleClose();
           }}
         >
-          <Typography variant='inherit'>
+          <Typography variant="inherit">
             <FavoriteIcon />
           </Typography>
         </MenuItem>

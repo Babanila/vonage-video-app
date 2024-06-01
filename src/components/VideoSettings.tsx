@@ -20,7 +20,7 @@ const VideoSettingsDefault: React.FC<VideoSettingsProps> = ({
     <div className={className}>
       <VideocamIcon />
       <div>Video</div>
-      <Switch checked={hasVideo} onChange={onVideoChange} name='VideoToggle' />
+      <Switch checked={hasVideo} onChange={onVideoChange} name="VideoToggle" />
     </div>
   );
 };

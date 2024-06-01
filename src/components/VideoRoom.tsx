@@ -78,15 +78,15 @@ export function VideoRoom() {
     );
 
   return (
-    <div id='callContainer' className={classes.callContainer}>
+    <div id="callContainer" className={classes.callContainer}>
       <div
-        id='roomContainer'
+        id="roomContainer"
         className={classes.roomContainer}
         ref={roomContainer}
       >
         <NetworkToast networkStatus={networkStatus} />
         <div
-          id='screenSharingContainer'
+          id="screenSharingContainer"
           className={classes.screenSharingContainer}
         >
           {isScreenSharing && (

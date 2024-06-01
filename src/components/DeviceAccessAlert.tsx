@@ -30,7 +30,7 @@ export const DeviceAccessAlert: FC<DeviceAccessAlertProps> = ({
         <h2 className={classes.devicesText}>{messageToDisplay}</h2>
         <img
           src={imgToDisplay}
-          alt='Access Dialog'
+          alt="Access Dialog"
           className={classes.devicesImages}
         />
       </div>

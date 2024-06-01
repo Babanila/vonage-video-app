@@ -88,7 +88,7 @@ export const VideoFilter: React.FC<VideoFilterProps> = ({
           <div
             className={classes.buttonContainer}
             onClick={() => applyFilter('reset', '')}
-            role='presentation'
+            role="presentation"
           >
             <BlockIcon
               style={{
@@ -103,7 +103,7 @@ export const VideoFilter: React.FC<VideoFilterProps> = ({
           <div
             className={classes.buttonContainer}
             onClick={() => applyFilter('blur', 'low')}
-            role='presentation'
+            role="presentation"
           >
             <BlurOnIcon
               style={{
@@ -118,7 +118,7 @@ export const VideoFilter: React.FC<VideoFilterProps> = ({
           <div
             className={classes.buttonContainer}
             onClick={() => applyFilter('blur', 'high')}
-            role='presentation'
+            role="presentation"
           >
             <BlurCircularIcon
               style={{
@@ -139,7 +139,7 @@ export const VideoFilter: React.FC<VideoFilterProps> = ({
               // src={`${PUBLIC_URL}/backgrounds/${img}.jpeg`}
               // src={`${process.env.PUBLIC_URL}/backgrounds/${img}.jpeg`}
               alt={`Background ${img}`}
-              role='presentation'
+              role="presentation"
             />
           ))}
         </div>

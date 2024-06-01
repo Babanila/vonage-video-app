@@ -103,31 +103,31 @@ export const MuteAudioButton: React.FC<MuteAudioButtonProps> = ({
       <ButtonGroup
         disableElevation
         className={classes.groupButton}
-        variant='contained'
+        variant="contained"
         ref={anchorRef}
-        aria-label='split button'
+        aria-label="split button"
       >
-        <Tooltip title={title} aria-label='add'>
+        <Tooltip title={title} aria-label="add">
           <IconButton
-            edge='start'
-            color='inherit'
-            aria-label='mic'
+            edge="start"
+            color="inherit"
+            aria-label="mic"
             onClick={toggleAudio}
             className={`${classes.arrowButton as string} ${isAudioPresent}`}
           >
             {!hasAudio ? (
-              <MicOffIcon fontSize='inherit' />
+              <MicOffIcon fontSize="inherit" />
             ) : (
-              <MicIcon fontSize='inherit' />
+              <MicIcon fontSize="inherit" />
             )}
           </IconButton>
         </Tooltip>
         <IconButton
-          size='small'
+          size="small"
           aria-controls={open ? 'split-button-menu' : undefined}
           aria-expanded={open ? 'true' : undefined}
-          aria-label='select merge strategy'
-          aria-haspopup='menu'
+          aria-label="select merge strategy"
+          aria-haspopup="menu"
           onClick={handleToggle}
           className={classes.arrowButton}
         >
@@ -152,13 +152,15 @@ export const MuteAudioButton: React.FC<MuteAudioButtonProps> = ({
           >
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MenuList id='split-button-menu'>
+                <MenuList id="split-button-menu">
                   {options.map((option, index) => (
                     <MenuItem
                       key={option}
                       selected={index === selectedIndex}
                       onClick={(event) => handleChangeAudioSource(event, index)}
-                      classes={{ selected: localClasses.selectedMAB }}
+                      classes={{
+                        selected: localClasses.selectedMAB,
+                      }}
                     >
                       {option}
                     </MenuItem>

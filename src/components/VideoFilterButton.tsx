@@ -66,21 +66,30 @@ export const VideoFilterButton: React.FC<VideoFilterButtonProps> = ({
           switch (filter) {
             case 'reset':
               await camera.clearVideoFilter();
-              setVideoFilter({ filterName: '', filterPayload: '' });
+              setVideoFilter({
+                filterName: '',
+                filterPayload: '',
+              });
               break;
             case 'blur':
               await camera.setVideoFilter({
                 type: 'backgroundBlur',
                 blurStrength: filterPayload,
               });
-              setVideoFilter({ filterName: filter, filterPayload });
+              setVideoFilter({
+                filterName: filter,
+                filterPayload,
+              });
               break;
             case 'backgroundImage':
               await camera.setVideoFilter({
                 type: 'backgroundReplacement',
                 backgroundImgUrl: filterPayload,
               });
-              setVideoFilter({ filterName: filter, filterPayload });
+              setVideoFilter({
+                filterName: filter,
+                filterPayload,
+              });
               break;
             default:
             // do nothing
@@ -99,22 +108,22 @@ export const VideoFilterButton: React.FC<VideoFilterButtonProps> = ({
 
   return (
     <>
-      <Tooltip title={'Apply Video Filter'} aria-label='add'>
+      <Tooltip title={'Apply Video Filter'} aria-label="add">
         <IconButton
-          edge='start'
-          color='inherit'
-          aria-label='mic'
+          edge="start"
+          color="inherit"
+          aria-label="mic"
           onClick={handleOpen}
           className={classes.toolbarButtons}
         >
-          <CameraEnhanceIcon fontSize='inherit' />
+          <CameraEnhanceIcon fontSize="inherit" />
         </IconButton>
       </Tooltip>
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
       >
         {body}
       </Modal>

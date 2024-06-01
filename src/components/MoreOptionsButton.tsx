@@ -41,15 +41,15 @@ export const MoreOptionsButton: React.FC<MoreOptionsButtonProps> = ({
 
   return (
     <div>
-      <Tooltip title={titleToolTip} aria-label='add'>
+      <Tooltip title={titleToolTip} aria-label="add">
         <IconButton
           onClick={toggleDrawer()}
-          edge='start'
-          color='inherit'
-          aria-label='chat'
+          edge="start"
+          color="inherit"
+          aria-label="chat"
           className={localClasses.infoButtonMOB}
         >
-          <ChatIcon fontSize='inherit' />
+          <ChatIcon fontSize="inherit" />
         </IconButton>
       </Tooltip>
       <Drawer

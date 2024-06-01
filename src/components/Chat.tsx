@@ -67,12 +67,12 @@ export const ChatInput: FC<ChatInputProps> = ({ sendMessage }) => {
   };
 
   return (
-    <form className={classes.wrapForm} noValidate autoComplete='off'>
+    <form className={classes.wrapForm} noValidate autoComplete="off">
       <TextField
         onChange={changeText}
         onKeyDown={onKeyDown}
-        id='standard-text'
-        label='Chat'
+        id="standard-text"
+        label="Chat"
         className={classes.wrapText}
         value={text}
       />
@@ -81,8 +81,8 @@ export const ChatInput: FC<ChatInputProps> = ({ sendMessage }) => {
           sendMessage(text);
           setText('');
         }}
-        variant='contained'
-        color='primary'
+        variant="contained"
+        color="primary"
         className={classes.button}
       >
         <SendIcon />
@@ -124,19 +124,19 @@ export const ChatMessages: FC<ChatMessagesProps> = ({
             >
               <div className={classes.chatAvatar}>
                 <ContactsIcon className={classes.iconChat} />
-                <Typography color='textSecondary' variant='subtitle1'>
+                <Typography color="textSecondary" variant="subtitle1">
                   {derivedClassName}
                 </Typography>
                 <Typography
                   className={classes.time}
-                  color='textSecondary'
-                  variant='subtitle1'
+                  color="textSecondary"
+                  variant="subtitle1"
                 >
                   {msg.date}
                 </Typography>
               </div>
               <div className={classes.chatContent}>
-                <Typography color='textPrimary' variant='body1'>
+                <Typography color="textPrimary" variant="body1">
                   {msg.data}
                 </Typography>
               </div>
