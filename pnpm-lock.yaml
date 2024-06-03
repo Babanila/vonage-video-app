@@ -136,8 +136,8 @@ devDependencies:
     specifier: 8.1.5
     version: 8.1.5(react-dom@18.3.1)(react@18.3.1)
   ts-node:
-    specifier: 10.9.2
-    version: 10.9.2(@types/node@20.13.0)(typescript@5.4.5)
+    specifier: 10.8.0
+    version: 10.8.0(@types/node@20.13.0)(typescript@5.4.5)
   typescript:
     specifier: 5.4.5
     version: 5.4.5
@@ -8952,8 +8952,8 @@ packages:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
 
-  /ts-node@10.9.2(@types/node@20.13.0)(typescript@5.4.5):
-    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
+  /ts-node@10.8.0(@types/node@20.13.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-/fNd5Qh+zTt8Vt1KbYZjRHCE9sI5i7nqfD/dzBBRDeVXZXS6kToW6R7tTU6Nd4XavFs0mAVCg29Q//ML7WsZYA==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'

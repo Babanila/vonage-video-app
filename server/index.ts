@@ -1,11 +1,15 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { config } from 'dotenv';
 
-import type { ArchiveType } from './opentok/opentok';
-import opentok from './opentok/opentok';
+import type { ArchiveType } from './opentok/opentok.js';
+import opentok from './opentok/opentok.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const env = process.env.NODE_ENV ?? 'development';
 const envPath = path.join(__dirname, '..');
