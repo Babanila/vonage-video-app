@@ -40,7 +40,6 @@ export default function App() {
           <EndCall />
         </Route>
         <UserNameRoute exact path="/room/:roomName" component={VideoRoom} />
-        {/* <Route exact path='/room/:roomName' component={VideoRoom}></Route> */}
         <Route path="/error" component={Error}></Route>
         <Route exact path="/" component={WaitingRoom}></Route>
         <Route path="*">
