@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_SERVER_URL = 'http://localhost:5000/';
+const API_SERVER_URL = `${process.env.REACT_APP_API_SERVER_URL}`;
 
 export const getCredentials = async (roomName: string) => {
   return await axios.get(`${API_SERVER_URL}/session/${roomName}`);

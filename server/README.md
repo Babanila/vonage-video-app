@@ -1,4 +1,4 @@
-## API
+## Server API
 
 ### Create Room
 
